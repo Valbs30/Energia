@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Poppins:wght@900&family=Pridi:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +13,8 @@ header {
     background-image: url("../images/Hero.png");
     background-size: cover;
     height: 100vh;
-    padding: 30rem 16.5rem;
+    padding: 30rem 9rem;
+    text-align: center;
 }
 
 h1 {
@@ -21,5 +22,21 @@ h1 {
     font-weight: 900;
     color: #FFF;
     font-family: Poppins;
-    stroke:#000;
+    -webkit-text-stroke: 1px #000;
+}
+
+h2 {
+    font-size: 12.8rem;
+    font-weight: 700;
+    color: #FFF;
+    font-family: Pridi;
+    text-shadow: #000;
+    -webkit-text-stroke: 1px #000;
+}
+
+p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #000;
+    font-family: Baskervville;
 }
