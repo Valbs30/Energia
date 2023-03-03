@@ -15,12 +15,14 @@ header {
     height: 100vh;
     padding: 30rem 9rem;
     text-align: center;
+    stroke: #000;
 }
 
 h1 {
     font-size: 11rem;
     font-weight: 900;
     color: #FFF;
+    width: 110rem;
     font-family: Poppins;
     -webkit-text-stroke: 1px #000;
 }
@@ -36,7 +38,9 @@ span {
 section {
     background-image: url("../images/Energ_Renov.jpg");
     background-size: cover;
-    padding: 22.5rem 6.75rem;
+    height: 75vh;
+    background-position-x: -8rem;
+    background-position-y: -8rem;
 }
 
 h2 {
@@ -46,7 +50,9 @@ h2 {
     font-family: Pridi;
     text-shadow: #000;
     -webkit-text-stroke: 1px #000;
-    margin-left: 50rem;
+    margin-left: 60rem;
+    line-height: 13rem;
+    height: 26rem;
 }
 
 p {
@@ -54,7 +60,7 @@ p {
     font-weight: 400;
     color: #000;
     font-family: Baskervville;
-    width: 52%;
+    width: 65rem;
     height: 30rem;
     margin-left: 44%;
 }
