@@ -25,6 +25,14 @@ h1 {
     -webkit-text-stroke: 1px #000;
 }
 
+span {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #FFF;
+    font-family: Pridi;
+    -webkit-text-stroke: 1px #000;
+}
+
 section {
     background-image: url("../images/Energ_Renov.jpg");
     background-size: cover;
@@ -38,7 +46,7 @@ h2 {
     font-family: Pridi;
     text-shadow: #000;
     -webkit-text-stroke: 1px #000;
-    margin-left: 70rem;
+    margin-left: 50rem;
 }
 
 p {
