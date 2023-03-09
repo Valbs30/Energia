@@ -78,9 +78,19 @@ span {
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-secundary-b);
-    font-family: Baskervville;
+    font-family: var(--font-default);
     /*padding: 0rem 57rem;
     padding: 1.5rem 5rem 3.7rem 57rem;
     width: 66rem;
     height: 30rem;*/
+}
+
+.section-eolic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../images/Fundo_Eolic.jpg");
+    background-size:cover;
+    height: 75vh;
+    background-position-y: -15rem;
 }
