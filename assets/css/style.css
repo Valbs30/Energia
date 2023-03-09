@@ -5,62 +5,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --text-secundary-w: #fff;
+    --text-secundary-b: #000;
+    --font-heading: 'Pridi';
+    --font-default: 'Baskervville';
+    --stroke: 1px #000;
+}
+
 html {
     font-size: 62.5%;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url("../images/Hero.jpg");
     background-size: cover;
     height: 100vh;
-    padding: 30rem 9rem;
-    text-align: center;
-    stroke: #000;
+    stroke: var(--text-secundary-b);
 }
 
 h1 {
     font-size: 11rem;
     font-weight: 900;
-    color: #FFF;
-    width: 110rem;
+    color: var(--text-secundary-w);
+    /*width: 110rem;*/
     font-family: Poppins;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: var(--stroke);
 }
 
 span {
     font-size: 4.8rem;
     font-weight: 700;
-    color: #FFF;
-    font-family: Pridi;
-    -webkit-text-stroke: 1px #000;
+    color: var(--text-secundary-w);
+    font-family: var(--font-heading);
+    -webkit-text-stroke: var(--stroke);
+    text-align: center;
 }
 
-section {
+.section-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     background-image: url("../images/Energ_Renov.jpg");
     background-size: cover;
     height: 75vh;
-    background-position-x: -8rem;
-    background-position-y: -8rem;
+    background-position-x: -13rem;
+    background-position-y: -14.8rem;
+    padding: 1.3rem 5rem 3.7rem 44.5%;
 }
 
-h2 {
+.section-start h2 {
     font-size: 12.8rem;
     font-weight: 700;
-    color: #FFF;
-    font-family: Pridi;
-    text-shadow: #000;
-    -webkit-text-stroke: 1px #000;
-    margin-left: 60rem;
+    color: var(--text-secundary-w);
+    font-family: var(--font-heading);
+    text-shadow: var(--text-secundary-b);
+    -webkit-text-stroke: var(--stroke);
     line-height: 13rem;
-    height: 26rem;
+    margin-left: 4.4rem;
+    /*padding: 1.3rem 5rem 1.5rem 61.4rem;
+    padding: 1.3rem 5rem;
+    line-height: 13rem;
+    height: 26rem;*/
 }
 
-p {
+.section-start p {
     font-size: 2.4rem;
     font-weight: 400;
-    color: #000;
+    color: var(--text-secundary-b);
     font-family: Baskervville;
-    width: 65rem;
-    height: 30rem;
-    margin-left: 44%;
+    /*padding: 0rem 57rem;
+    padding: 1.5rem 5rem 3.7rem 57rem;
+    width: 66rem;
+    height: 30rem;*/
 }
