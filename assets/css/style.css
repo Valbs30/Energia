@@ -47,7 +47,7 @@ span {
     text-align: center;
 }
 
-.section-start {
+#section-start {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -59,7 +59,7 @@ span {
     padding: 1.3rem 5rem 3.7rem 44.5%;
 }
 
-.section-start h2 {
+#start-h2 {
     font-size: 12.8rem;
     font-weight: 700;
     color: var(--text-secundary-w);
@@ -74,7 +74,7 @@ span {
     height: 26rem;*/
 }
 
-.section-start p {
+#start-p {
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-secundary-b);
@@ -85,12 +85,51 @@ span {
     height: 30rem;*/
 }
 
-.section-eolic {
+#section-eolic {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     background-image: url("../images/Fundo_Eolic.jpg");
     background-size:cover;
     height: 75vh;
+    flex-wrap: nowrap;
+    gap: 8%;
     background-position-y: -15rem;
+    padding: 1.3rem 5rem 3.7rem 8rem;
+}
+
+#section-eolic-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 80%;
+}
+
+#section-eolic-imagem{
+    width: 50%;
+    height: 75%;
+    border-radius: 44px;
+    border: 3px solid #000;
+}
+
+#section-eolic-titulo{
+    font-size: 12.8rem;
+    font-weight: 700;
+    color: #38C3FF;
+    font-family: var(--font-heading);
+    text-shadow: var(--text-secundary-b);
+    -webkit-text-stroke: var(--stroke);
+    line-height: 13rem;
+    margin-left: 4.4rem;
+}
+
+#section-eolic-p{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--text-secundary-b);
+    font-family: var(--font-default);
+    width: 60%;
+    border-left: 0.5px solid #000;
+    padding-left: 2%;
+    height:92%;
+    background-color: #ffffff40;
 }
