@@ -134,6 +134,22 @@ header {
     -webkit-text-stroke: var(--stroke);
 }
 
+.button{
+    background: linear-gradient(90deg, #6DD5FA, #FFFFFF);
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    color: var(--text-secundary-b);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #2980B9;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
 
 
 #section-eolica {
@@ -244,6 +260,12 @@ header {
 #hidro-h2 {
     color: #C6D7DC;
 }
+
+#section-final {
+
+}
+
+
 
 
 /*.div-imagem{
