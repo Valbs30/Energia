@@ -31,7 +31,7 @@ html {
 }
 
 .sections-2 {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     background-size: cover;
     flex-wrap: nowrap;
@@ -328,37 +328,47 @@ header {
     color: #C6D7DC;
 }
 
-/*#section-final {
-
-}
-
-
-
-
-/*.div-imagem{
-    border-radius: 44px;
-    border: 3px solid #000;
-}
-
-#eolic {
-    display: flex;
-    background: url("../images/Fundo_Eolic.jpg");
-    background-size: cover;
-    height: 80vh;
-    gap: 2.4rem;
-    background-position-y: -10rem;
-    padding: 5rem 5rem;
-}
-
-#eolic-div{
+#section-dados {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.8rem;
-    height: 70vh;
-    /*padding: 6rem 3rem 4rem 4rem;*/
-/*}
+    gap: 3rem;
+    height: 100vh;
+    background-image: url(../images/Fundo_Dados.jpg);
+    background-size: cover;
+    flex-wrap: nowrap;
+    padding: 2rem 5rem;
+}
 
+#div-dados{
+    display: flex;
+    flex-direction: row; 
+    gap: 4%;
+    height: 60vh;
+}
+
+#grafico {
+    background-image: url("../images/Grafico.png");
+    background-repeat: no-repeat;
+    width: 48rem;
+    height: 34vh;
+}
+
+#titulo-dados{
+    background: linear-gradient(90deg, #00C3FF, #FFFF1C);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 10rem;
+}
+
+#p-dados{
+    width: 60%;
+}
+
+
+
+
+/*
 #eolic-img{
     background-image: url(../images/Turb_Eolic.jpg);
     width: 28rem;
@@ -369,15 +379,6 @@ header {
     border: 3px solid #000;
 }
 
-#eolic-h{
-    font-size: 12.8rem;
-    font-weight: 700;
-    color: #38C3FF;
-    font-family: var(--font-heading);
-    text-shadow: var(--text-secundary-b);
-    -webkit-text-stroke: var(--stroke);
-    line-height: var(--l-height-h);
-}
 
 #eolic-p {
     font-size: 2.4rem;
@@ -390,13 +391,6 @@ header {
     padding-left: 2.4rem;
     height: 41vh;
     text-shadow: 3px 3px 6px var(--text-secundary-b);
-    /*overflow: hidden;
-    padding: 6rem 6rem 15.5rem 2.4rem;
-    width: 41rem;
-    height:75.7rem;
-    background-color: #ffffff10;
-    backdrop-filter: blur(16px);*/
-/*}
 
 #eolic-p::before {
     content: '';
