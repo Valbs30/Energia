@@ -7,8 +7,8 @@
 }
 
 :root{
-    --text-secundary-w: #fff;
-    --text-secundary-b: #000;
+    --white: #fff;
+    --black: #000;
     --font-heading: 'Pridi';
     --font-default: 'Baskervville';
     --stroke: 1px #000;
@@ -18,79 +18,11 @@
 
 html {
     font-size: 62.5%;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../images/Hero.jpg");
-    background-size: cover;
-    height: 100vh;
-    stroke: var(--text-secundary-b);
-}
-
-#header-h1 {
-    font-size: 11rem;
-    font-weight: 900;
-    color: var(--text-secundary-w);
-    /*width: 110rem;*/
-    font-family: Poppins;
-    -webkit-text-stroke: var(--stroke);
-}
-
-#header-span {
-    font-size: 4.8rem;
-    font-weight: 700;
-    color: var(--text-secundary-w);
-    font-family: var(--font-heading);
-    -webkit-text-stroke: var(--stroke);
-    text-align: center;
-}
-
-#section-start {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-image: url("../images/Energ_Renov.jpg");
-    background-size: cover;
-    height: 80vh;
-    background-position-x: -13rem;
-    background-position-y: -14.8rem;
-    padding: 2rem 5rem 5rem 44.5%;
-}
-
-#start-h2 {
-    font-size: 12.8rem;
-    font-weight: 700;
-    color: var(--text-secundary-w);
-    font-family: var(--font-heading);
-    text-shadow: var(--text-secundary-b);
-    -webkit-text-stroke: var(--stroke);
-    line-height: var(--l-height-h);
-    padding-left: 4.4rem;
-    /*padding: 1.3rem 5rem 1.5rem 61.4rem;
-    padding: 1.3rem 5rem;
-    line-height: 13rem;
-    height: 26rem;*/
-}
-
-#start-p {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--text-secundary-b);
-    font-family: var(--font-default);
-    line-height: var(--l-height-p);
-    /*padding: 0rem 57rem;
-    padding: 1.5rem 5rem 3.7rem 57rem;
-    width: 66rem;
-    height: 30rem;*/
+    overflow-x: hidden;
 }
 
 .sections {
     height: 80vh;
-    width: 100vw;
     display: flex;
     background-size: cover;
     flex-wrap: nowrap;
@@ -118,7 +50,7 @@ header {
 .paragrafo {
     font-size: 2.4rem;
     font-weight: 400;
-    color: var(--text-secundary-b);
+    color: var(--black);
     font-family: var(--font-default);
     border-left: 1px solid #000;
     padding-left: 2%;
@@ -130,25 +62,159 @@ header {
     font-weight: 700;
     line-height: 13rem;
     font-family: var(--font-heading);
-    text-shadow: var(--text-secundary-b);
+    text-shadow: var(--black);
     -webkit-text-stroke: var(--stroke);
 }
 
 .button{
-    background: linear-gradient(90deg, #6DD5FA, #FFFFFF);
-    padding: 1rem 3rem;
-    border-radius: 15px;
-    color: var(--text-secundary-b);
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    line-height: var(--l-height-p);
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    gap: 7rem;
+    margin-bottom: 1rem;
     transition: all 0.3s ease;
+    transition: transform 0.3 ease-in-out;
 }
 
 .button:hover {
     transform: scale(1.1);
+    transform: translateX(-24rem);
     box-shadow: 0 0 10px #2980B9;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+/*@keyframes hover {
+    from {
+        top: 7rem;
+        right: 10rem;
+    }
+    to {
+        top: 7rem;
+        right: 5rem;
+    }
+}*/
+
+.div-botoes {
+    position: absolute;
+    z-index: 1;
+    left: 93%;
+    right: -40%;
+}
+
+.icon {
+    background-color: #ffffff80;
+    border-radius: 5rem;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/Hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    stroke: var(--black);
+}
+
+#header-h1 {
+    font-size: 11rem;
+    font-weight: 900;
+    color: var(--white);
+    /*width: 110rem;*/
+    font-family: Poppins;
+    -webkit-text-stroke: var(--stroke);
+}
+
+#header-span {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--white);
+    font-family: var(--font-heading);
+    -webkit-text-stroke: var(--stroke);
+    text-align: center;
+}
+
+#section-start {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-image: url("../images/Energ_Renov.jpg");
+    background-size: cover;
+    height: 85vh;
+    background-position-x: -13rem;
+    background-position-y: -14.8rem;
+    padding: 2rem 0rem 5rem 44.5%;
+}
+
+#start-h2 {
+    font-size: 12.8rem;
+    font-weight: 700;
+    color: var(--white);
+    font-family: var(--font-heading);
+    text-shadow: var(--black);
+    -webkit-text-stroke: var(--stroke);
+    line-height: var(--l-height-h);
+    padding-left: 4.4rem;
+    /*padding: 1.3rem 5rem 1.5rem 61.4rem;
+    padding: 1.3rem 5rem;
+    line-height: 13rem;
+    height: 26rem;*/
+}
+
+#start-p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--black);
+    font-family: var(--font-default);
+    line-height: var(--l-height-p);
+    padding-right: 15rem;
+    /*padding: 0rem 57rem;
+    padding: 1.5rem 5rem 3.7rem 57rem;
+    width: 66rem;
+    height: 30rem;*/
+}
+
+#h-p-start {
+    display: flex;
+    flex-direction: column;
+}
+
+#b-eolic {
+    background: linear-gradient(90deg, #38C3FF, var(--white));
+}
+
+#b-solar {
+    background: linear-gradient(90deg, #FFC93F, var(--white));
+}
+
+#b-hidro {
+    background: linear-gradient(90deg, #66BFFF, var(--white));
+}
+
+#b-bio {
+    background: linear-gradient(90deg, #98D90E, var(--white));
+}
+
+#b-geo {
+    background: linear-gradient(90deg, #F06110, var(--white));
+}
+
+#b-tidal {
+    background: linear-gradient(90deg, #0768d7, var(--white));
+}
+
+#b-hydrogen {
+    background: linear-gradient(90deg, #C6D7DC, var(--white));
 }
 
 
@@ -190,7 +256,7 @@ header {
     font-weight: 700;
     color: #FFC93F;
     font-family: var(--font-heading);
-    text-shadow: var(--text-secundary-b);
+    text-shadow: var(--black);
     -webkit-text-stroke: var(--stroke);
     line-height: 13rem;
     margin-left: 4.4rem;
@@ -261,7 +327,7 @@ header {
     color: #C6D7DC;
 }
 
-#section-final {
+/*#section-final {
 
 }
 
