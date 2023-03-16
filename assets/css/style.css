@@ -356,6 +356,7 @@ header {
 
 #titulo-dados{
     background: linear-gradient(90deg, #00C3FF, #FFFF1C);
+    background-clip: padding-box;
     -webkit-background-clip: text;
     color: transparent;
     font-size: 10rem;
