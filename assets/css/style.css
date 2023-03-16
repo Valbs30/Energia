@@ -27,15 +27,23 @@ html {
     background-size: cover;
     flex-wrap: nowrap;
     gap: 8%;
-    padding: 1.3rem 5rem 3.7rem 8rem;
+    padding: 3rem 5rem 3rem 8rem;
 }
 
+.sections-2 {
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    flex-wrap: nowrap;
+    gap: 8%;
+    padding: 3rem 5rem 3rem 8rem;
+}
 
 .divs {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     height: 70%;
     width: 70%;
 }
@@ -43,8 +51,8 @@ html {
 .div-imagem {
     border-radius: 4.4rem;
     border: 3px solid #000;
-    width: 20vw;
-    height: 40vh;
+    width: 20%;
+    height: 50vh;
 }
 
 .paragrafo {
@@ -52,6 +60,7 @@ html {
     font-weight: 400;
     color: var(--black);
     font-family: var(--font-default);
+    line-height: var(--l-height-p);
     border-left: 1px solid #000;
     padding-left: 2%;
     background-color: #ffffff40;
@@ -60,8 +69,8 @@ html {
 .titulo {
     font-size: 12.8rem;
     font-weight: 700;
-    line-height: 13rem;
     font-family: var(--font-heading);
+    line-height: var(--l-height-h);
     text-shadow: var(--black);
     -webkit-text-stroke: var(--stroke);
 }
@@ -187,6 +196,7 @@ header {
 #h-p-start {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 #b-eolic {
@@ -218,60 +228,50 @@ header {
 }
 
 
-#section-eolica {
+#section-eolic {
     background-image: url("../images/Fundo_Eolic.jpg");
-    background-position-y: -15.8rem;
+    background-position-y: -16rem;
     background-repeat: no-repeat;
 }
 
-#eolica-imagem {
+#img-eolic {
     background-image: url("../images/Img_Eolic.jpg");
-    background-position-x: 32rem;
+    background-position-x: 40rem;
     background-position-y: -8rem;
 }
 
-#eolica-titulo {
+#h2-eolic {
     color: #38C3FF;
 }
 
 
 #section-solar {
     background-image: url("../images/Fundo_Solar.jpg");
-    background-position-y: -20.8rem;
+    background-position-y: -21rem;
     background-repeat: no-repeat;
 }
-    
-#solar-p {
-    width: 100%;
-}
 
-#solar-imagem {
+#img-solar {
     background-image: url("../images/Img_Solar.jpg");
     background-position-x: 40rem;
-    background-position-y: -1rem;   
+    background-position-y: -60rem;   
 }
 
-#solar-h2 {
-    font-size: 12.8rem;
-    font-weight: 700;
+#h2-solar {
     color: #FFC93F;
-    font-family: var(--font-heading);
-    text-shadow: var(--black);
-    -webkit-text-stroke: var(--stroke);
-    line-height: 13rem;
-    margin-left: 4.4rem;
 }
 
-
-#hidre-imagem {
-    background-image: url("../images/Fundo_Hidro.jpg");
-}
 
 #section-hidre {
-    background-image: url("../images/Img_Hidro.jpg");
+    background-image: url("../images/Img_Hidre.jpg");
+    background-position-y: -36rem;
 }
 
-#hidre-h2 {
+#img-hidre {
+    background-image: url("../images/Fundo_Hidre.jpg");
+}
+
+#h2-hidre {
     color: #66BFFF;
 }
 
@@ -280,24 +280,25 @@ header {
     background-image: url("../images/Fundo_Bio.jpg");
 }
 
-#bio-imagem {
+#img-bio {
     background-image: url("../images/Img_Bio.jpg");
 }
 
-#bio-h2 {
+#h2-bio {
     color: #98D90E;
 }
 
 
 #section-geo {
     background-image: url("../images/Fundo_Geo.jpg");
+    background-position-y: -11rem;
 }
 
-#geo-imagem {
+#img-geo {
     background-image: url("../images/Img_Geo.jpg");
 }
 
-#geo-h2 {
+#h2-geo {
     color: #F06110;
 }
 
@@ -306,24 +307,24 @@ header {
     background-image: url("../images/Fundo_MareOnda.jpg");
 }
 
-#mare-imagem {
+#img-mare {
     background-image: url("../images/Img_MareOnda.jpg");
 }
 
-#mare-h2 {
+#h2-mare {
     color: #0D4F9C;
 }
 
 
-#section-hidro {
-    background-image: url("../images/Fundo_H2.jpg");
+#section-hydro {
+    background-image: url("../images/Fundo_Hydro.jpg");
 }
 
-#hidro-imagem {
-    background-image: url("../images/Img_H2.jpg");
+#img-hydro {
+    background-image: url("../images/Img_Hydro.jpg");
 }
 
-#hidro-h2 {
+#h2-hydro {
     color: #C6D7DC;
 }
 
