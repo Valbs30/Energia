@@ -51,8 +51,8 @@ html {
 .div-imagem {
     border-radius: 4.4rem;
     border: 3px solid #000;
-    width: 20%;
-    height: 50vh;
+    width: 25%;
+    height: 40vh;
 }
 
 .paragrafo {
@@ -100,17 +100,6 @@ html {
     padding-right: 2rem;
 }
 
-/*@keyframes hover {
-    from {
-        top: 7rem;
-        right: 10rem;
-    }
-    to {
-        top: 7rem;
-        right: 5rem;
-    }
-}*/
-
 .div-botoes {
     position: absolute;
     z-index: 1;
@@ -145,7 +134,6 @@ header {
     font-size: 11rem;
     font-weight: 900;
     color: var(--white);
-    /*width: 110rem;*/
     font-family: Poppins;
     -webkit-text-stroke: var(--stroke);
     opacity: 0;
@@ -199,10 +187,6 @@ header {
     -webkit-text-stroke: var(--stroke);
     line-height: var(--l-height-h);
     padding-left: 4.4rem;
-    /*padding: 1.3rem 5rem 1.5rem 61.4rem;
-    padding: 1.3rem 5rem;
-    line-height: 13rem;
-    height: 26rem;*/
 }
 
 #start-p {
@@ -212,10 +196,6 @@ header {
     font-family: var(--font-default);
     line-height: var(--l-height-p);
     padding-right: 15rem;
-    /*padding: 0rem 57rem;
-    padding: 1.5rem 5rem 3.7rem 57rem;
-    width: 66rem;
-    height: 30rem;*/
 }
 
 #h-p-start {
@@ -255,14 +235,14 @@ header {
 
 #section-eolic {
     background-image: url("../images/Fundo_Eolic.jpg");
-    background-position-y: -16rem;
-    background-repeat: no-repeat;
+    /*background-position-y: -16rem;
+    background-repeat: no-repeat;*/
 }
 
 #img-eolic {
     background-image: url("../images/Img_Eolic.jpg");
-    background-position-x: 40rem;
-    background-position-y: -8rem;
+    /*background-position-x: 40rem;
+    background-position-y: -8rem;*/
 }
 
 #h2-eolic {
@@ -272,14 +252,14 @@ header {
 
 #section-solar {
     background-image: url("../images/Fundo_Solar.jpg");
-    background-position-y: -21rem;
-    background-repeat: no-repeat;
+    /*background-position-y: -21rem;
+    background-repeat: no-repeat;*/
 }
 
 #img-solar {
     background-image: url("../images/Img_Solar.jpg");
-    background-position-x: 40rem;
-    background-position-y: -60rem;   
+    /*background-position-x: 40rem;
+    background-position-y: -60rem;*/
 }
 
 #h2-solar {
@@ -288,12 +268,12 @@ header {
 
 
 #section-hidre {
-    background-image: url("../images/Img_Hidre.jpg");
-    background-position-y: -36rem;
+    background-image: url("../images/Fundo_Hidre.jpg");
+    /*background-position-y: -36rem;*/
 }
 
 #img-hidre {
-    background-image: url("../images/Fundo_Hidre.jpg");
+    background-image: url("../images/Img_Hidre.jpg");
 }
 
 #h2-hidre {
@@ -316,7 +296,7 @@ header {
 
 #section-geo {
     background-image: url("../images/Fundo_Geo.jpg");
-    background-position-y: -11rem;
+    /*background-position-y: -11rem;*/
 }
 
 #img-geo {
@@ -390,109 +370,4 @@ header {
 
 #p-dados{
     width: 60%;
-}
-
-
-
-
-/*
-#eolic-img{
-    background-image: url(../images/Turb_Eolic.jpg);
-    width: 28rem;
-    height: 39vh;
-    background-position-x: 88%;
-    background-position-y: 14%;
-    border-radius: 4.4rem;
-    border: 3px solid #000;
-}
-
-
-#eolic-p {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--text-secundary-b);
-    font-family: var(--font-default);
-    line-height: var(--l-height-p);
-    border-left: 1px solid #000;
-    position: relative;
-    padding-left: 2.4rem;
-    height: 41vh;
-    text-shadow: 3px 3px 6px var(--text-secundary-b);
-
-#eolic-p::before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    background-color: var(--text-secundary-w);
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: blur(16rem);
-}
-
-#solar{
-    display: flex;
-    background-size: cover;
-    background-image: url("../images/Fundo_Solar.jpg");
-    height: 80vh;
-    padding: 1.3rem 5rem 3.7rem 8rem;
-    background-repeat: no-repeat;
-    background-position-y: -20.8rem;
-    gap: 8%;
-    align-items: center;
-}
-
-#solar-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    height: 100%;
-    width: 60%;
-    
-}
-
-#solar-h{
-    font-size: 12.8rem;
-    font-weight: 700;
-    color: #FFC93F;
-    font-family: var(--font-heading);
-    text-shadow: var(--text-secundary-b);
-    -webkit-text-stroke: var(--stroke);
-    line-height: 13rem;
-    margin-left: 4.4rem;
-}
-
-#solar-p{
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--text-secundary-b);
-    font-family: var(--font-default);
-    border-left: 1px solid #000;
-    padding-left: 2%;
-    /*background-color: #ffffff40;*/
-    /*width: 100%;
-    width: 100%;
-    position: relative;
-}
-
-#solar-p::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    background-color: var(--text-secundary-w);
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: blur(16rem);
-}
-
-#solar-img{
-    background-image: url("../images/Energ_Solar_Frente.png");
-    background-position-x: 40rem;
-    background-position-y: -1rem;   
-    width: 20%;
-    height: 70%;
 }
