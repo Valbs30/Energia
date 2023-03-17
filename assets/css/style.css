@@ -133,6 +133,12 @@ header {
     background-size: cover;
     height: 100vh;
     stroke: var(--black);
+    /*background-image: url('../videos/Video_Fundo.mp4');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation: none;*/
 }
 
 #header-h1 {
@@ -142,6 +148,11 @@ header {
     /*width: 110rem;*/
     font-family: Poppins;
     -webkit-text-stroke: var(--stroke);
+    opacity: 0;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 #header-span {
@@ -151,6 +162,20 @@ header {
     font-family: var(--font-heading);
     -webkit-text-stroke: var(--stroke);
     text-align: center;
+    opacity: 0;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
 #section-start {
@@ -359,7 +384,8 @@ header {
     background-clip: padding-box;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 10rem;
+    font-family: var(--font-heading);
+    font-size: 9.6rem;
 }
 
 #p-dados{
