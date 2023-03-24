@@ -31,7 +31,7 @@ html {
 }
 
 .sections-2 {
-    height: 120vh;
+    height: 100vh;
     display: flex;
     background-size: cover;
     flex-wrap: nowrap;
@@ -51,8 +51,35 @@ html {
 .div-imagem {
     border-radius: 4.4rem;
     border: 3px solid #000;
+    background-size: cover;
     width: 25%;
     height: 40vh;
+}
+
+.titulo {
+    font-size: 12.8rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    line-height: var(--l-height-h);
+    text-shadow: 2px 2px 2px var(--black);
+    /*-webkit-text-stroke: var(--stroke);*/
+    z-index: 1;
+}
+
+.div-blur {
+    position: relative;
+    z-index: 0;
+}
+
+.blur {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-color: var(--white);
+    filter: blur(16rem);
+    z-index: -1;
 }
 
 .paragrafo {
@@ -63,16 +90,6 @@ html {
     line-height: var(--l-height-p);
     border-left: 1px solid #000;
     padding-left: 2%;
-    background-color: #ffffff40;
-}
-
-.titulo {
-    font-size: 12.8rem;
-    font-weight: 700;
-    font-family: var(--font-heading);
-    line-height: var(--l-height-h);
-    text-shadow: var(--black);
-    -webkit-text-stroke: var(--stroke);
 }
 
 .button{
@@ -114,28 +131,46 @@ html {
 
 
 header {
+    background: url(../images/Hero.jpg);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    /*overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+}
+
+/*#video-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}*/
+
+#texto-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/Hero.jpg");
-    background-size: cover;
     height: 100vh;
     stroke: var(--black);
-    /*background-image: url('../videos/Video_Fundo.mp4');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    animation: none;*/
 }
 
 #header-h1 {
     font-size: 11rem;
     font-weight: 900;
-    color: var(--white);
     font-family: Poppins;
-    -webkit-text-stroke: var(--stroke);
+    color: var(--white);
+    /*background-image: linear-gradient(to right, #909090,#fef13e, #15932c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;*/
+    text-shadow: 2px 2px 2px var(--black);
+    /*-webkit-text-stroke: var(--stroke);*/
+    text-align: center;
     opacity: 0;
     animation-name: aparecer;
     animation-duration: 2s;
@@ -146,8 +181,12 @@ header {
 #header-span {
     font-size: 4.8rem;
     font-weight: 700;
-    color: var(--white);
     font-family: var(--font-heading);
+    color: var(--white);
+    /*background-image: linear-gradient(to right, #43baff,#9ad0ff, #2e9721);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;*/
     -webkit-text-stroke: var(--stroke);
     text-align: center;
     opacity: 0;
@@ -184,7 +223,8 @@ header {
     color: var(--white);
     font-family: var(--font-heading);
     text-shadow: var(--black);
-    -webkit-text-stroke: var(--stroke);
+    text-shadow: 2px 2px 2px var(--black);
+    /*-webkit-text-stroke: var(--stroke);*/
     line-height: var(--l-height-h);
     padding-left: 4.4rem;
 }
@@ -320,7 +360,6 @@ header {
     color: #0D4F9C;
 }
 
-
 #section-hydro {
     background-image: url("../images/Fundo_Hydro.jpg");
 }
@@ -332,6 +371,81 @@ header {
 #h2-hydro {
     color: #C6D7DC;
 }
+
+
+
+#section-curio {
+    height: 100vh;
+    background-color: #212121;
+    background-image: url(../images/Céu.jpg);
+    background-size: cover;
+    padding: 3rem 8rem;
+}
+
+#ul-curio {
+    display: flex;
+    justify-content: space-around;  
+}
+
+#h2-curio {
+    display: flex;
+    font-size: 12.8rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    line-height: var(--l-height-h);
+    color: var(--white);
+    text-shadow: var(--black);
+    text-shadow: 2px 2px 2px var(--black);
+    /*-webkit-text-stroke: var(--stroke);*/
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.li-curio {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    width: 40%;
+    height: 50%;
+    transition: 0.5s;
+}
+
+.img-card-curio {
+    height: 100%;
+    width: 100%;
+    border-radius: 4rem;
+}
+
+.h3-curio {
+    font-size: 10rem;
+    font-family: var(--font-heading);
+    color: var(--white);
+    text-shadow: 2px 2px 2px var(--black);
+    position: absolute;
+}
+
+.p-card-curio {
+    position: absolute;
+    font-size: 2.4rem;
+    color: var(--white);
+    background-color: #00000050;
+    opacity: 0;
+    margin-top: 12rem;
+    padding: 2rem;
+    transition: opacity 0.5s;
+}
+
+#section-curio .li-curio:hover {
+    width: 50%;
+    height: 60%;
+}
+#section-curio .li-curio:hover p {
+    opacity: 1;
+}
+
+
 
 #section-dados {
     display: flex;
@@ -349,7 +463,7 @@ header {
     display: flex;
     flex-direction: row; 
     gap: 4%;
-    height: 60vh;
+    height: 40vh;
 }
 
 #grafico {
@@ -366,6 +480,7 @@ header {
     color: transparent;
     font-family: var(--font-heading);
     font-size: 9.6rem;
+    z-index: 1;
 }
 
 #p-dados{
