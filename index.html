@@ -6,246 +6,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes_Energia</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
+    
 </head>
 <body>
     
-    <header>
-        <!-- <video autoplay id="video-fundo" src="./assets/videos/Video_Fundo.mp4"></video> -->
-        <div id="texto-header">
-            <h1 id="header-h1">FONTES DE ENERGIA <br> RENOVÁVEIS</h1> 
-            <span id="header-span">Armando Caliari Silva
-                <br>
-                Lucas Zucoloto Soares Valbusa
-            </span>
-        </div>
-    </header>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
 
-    <section id="section-start">
-        <div id="h-p-start">
-            <h2 id="start-h2">Energia Renovável</h2>
-            <p id="start-p">As energias renováveis, também chamadas de energias limpas ou alternativas, 
-                são aquelas provenientes da natureza e que se renovam naturalmente em uma 
-                escala de tempo humana, além de causarem baixo impacto ambiental.
-                <br><br>
-                Fontes de energias renováveis são os recursos naturais disponíveis em 
-                abundância e que se renovam constantemente na natureza, embora não possam 
-                ser considerados inesgotáveis, sendo utilizados pelo homem para a geração 
-                de diferentes tipos de energia e combustíveis.
-            </p>
-        </div>
-        <div class="div-botoes">
-            <a href="#section-eolic" class="button" id="b-eolic"><img src="../assets/icons/eolic.png" alt="eolic" class="icon"> Eólica</a>
-            <a href="#section-solar" class="button" id="b-solar"><img src="../assets/icons/solar.png" alt="solar" class="icon"> Solar</a>
-            <a href="#section-hidre" class="button" id="b-hidro"><img src="../assets/icons/hidre.png" alt="hidro" class="icon"> Hidrelétrica</a>
-            <a href="#section-bio" class="button" id="b-bio"><img src="../assets/icons/biomass.png" alt="bio" class="icon"> Biomassa</a>
-            <a href="#section-geo" class="button" id="b-geo"><img src="../assets/icons/geotermic.png" alt="geo" class="icon"> Geotérmica</a>
-            <a href="#section-mare" class="button" id="b-tidal"><img src="../assets/icons/tidal.png" alt="tidal" class="icon"> Maremotriz e <br> Ondomotriz</a>
-            <a href="#section-hydro" class="button" id="b-hydrogen"><img src="../assets/icons/hydrogen.png" alt="hydrogen" class="icon"> Hidrogênio</a>
-        </div>
-    </section>
+    <main class="hide">
+        <nav>
+            <div id="hamburger">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
 
-    <section class="sections" id="section-eolic">
-        <div class="divs" id="div-eolic">
-            <h2 class="titulo" id="h2-eolic">Eolica</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="p-eolic">Energia eólica é a energia cinética derivada da força dos ventos, que 
-                    pode ser utilizada para várias finalidades, incluindo a produção de eletricidade a partir de aerogeradores.
-                    Os ventos são os responsáveis por movimentar as hélices das turbinas eólicas e gerar a força mecânica 
-                    que, depois, será convertida em energia elétrica por meio de um gerador 
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Significado
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-wind"></i>
+                        Fontes Renováveis
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        Dados
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Economia de Energia
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="texto-header">
+                <h1 id="header-h1">FONTES DE ENERGIA <br> RENOVÁVEIS</h1> 
+                <span id="header-span">Armando Caliari Silva
+                    <br>
+                    Lucas Zucoloto Soares Valbusa
+                </span>
+            </div>
+        </header>
+
+        <section id="section-start">
+            <div id="h-p-start">
+                <h2 id="start-h2">Energia Renovável</h2>
+                <p id="start-p">As energias renováveis, também chamadas de energias limpas ou alternativas, 
+                    são aquelas provenientes da natureza e que se renovam naturalmente em uma 
+                    escala de tempo humana, além de causarem baixo impacto ambiental.
                     <br><br>
-                    <strong>VANTAGENS:</strong> É inesgotável, Não emite gases poluentes e nem gera resíduos e Diminui a 
-                    emissão de gases do efeito estufa (GEE).
-                    <br>
-                    <strong>DESVANTAGENS:</strong> Intermitência (nem sempre o vento sopra quando necessário), Impacto visual 
-                    considerável/Modificação da paisagem e Impacto sonoro (produz ruído constante).
+                    Fontes de energias renováveis são os recursos naturais disponíveis em 
+                    abundância e que se renovam constantemente na natureza, embora não possam 
+                    ser considerados inesgotáveis, sendo utilizados pelo homem para a geração 
+                    de diferentes tipos de energia e combustíveis.
                 </p>
             </div>
-        </div>
-        <div class="div-imagem" id="img-eolic" alt="Imagem de um cata-vento"></div>
-    </section>
+        </section>
 
-    <section class="sections" id="section-solar">
-        <div class="divs" id="div-solar">
-            <h2 class="titulo" id="h2-solar">Solar</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="p-solar">O termo energia solar pode se referir a qualquer uma das formas de energia 
-                    provenientes da luz ou calor do sol.
-                    Para se transformar em energia a radiação solar passa por um inversor solar para ser adaptada ao padrão 
-                    elétrico da rede e, depois, já pode ser utilizada para atender a casas, empresas e quaisquer outros estabelecimentos.
-                    <br><br>
-                    <strong>VANTAGENS:</strong> não polui, é renovável, limpa e silenciosa, pode ser usada em áreas isoladas 
-                    da rede elétrica, necessidade mínima de manutenção, muito fácil de instalar e é barato para manter. 
-                    <br>
-                    <strong>DESVANTAGENS:</strong> são o alto custo de aquisição (custo que se retorna em pouco tempo) e não 
-                    gerar energia à noite.
-                </p>
+        <section id="accord-tipos">
+            <h1 class="titulo" id="accord-h">Fontes Renováveis</h1>
+
+            <div class="accordion">
+                <div class="accordion-header" id="head-eolic"><img src="../assets/icons/eolic.png" alt="eolic" class="icon"> Eólica</div>
+                <div class="accordion-content" id="accord-eolic">
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="p-eolic">Energia eólica é a energia cinética derivada da força dos ventos, que 
+                            pode ser utilizada para várias finalidades, incluindo a produção de eletricidade a partir de aerogeradores.
+                            Os ventos são os responsáveis por movimentar as hélices das turbinas eólicas e gerar a força mecânica 
+                            que, depois, será convertida em energia elétrica por meio de um gerador 
+                            <br><br>
+                            <strong>VANTAGENS:</strong> É inesgotável, Não emite gases poluentes e nem gera resíduos e Diminui a 
+                            emissão de gases do efeito estufa (GEE).
+                            <br>
+                            <strong>DESVANTAGENS:</strong> Intermitência (nem sempre o vento sopra quando necessário), Impacto visual 
+                            considerável/Modificação da paisagem e Impacto sonoro (produz ruído constante).
+                        </p>
+                    </div>
+                    <div class="div-imagem large-only"></div>
+                </div>
             </div>
-        </div>
-        <div class="div-imagem" id="img-solar"></div>
-    </section>
-
-    <section class="sections" id="section-hidre">
-        <div class="divs" id="div-hidre">
-            <h2 class="titulo" id="h2-hidre">Hidrelétrica</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="p-hidre">Nessa fonte a água de um rio ou represa passa por uma usina onde ativa 
-                    as turbinas, gerando energia mecânica, e sai dela, terminando em um canal de descarga, através do qual 
-                    é devolvida ao fluxo. Diretamente conectado à turbina, está o gerador elétrico rotativo (alternador), 
-                    que transforma em energia elétrica a energia mecânica recebida pela turbina.
-                    <br><br>
-                    <strong>VANTAGENS:</strong> Trata-se de uma energia limpa, barata e gerada de uma fonte renovável. 
-                    <br>
-                    <strong>DESVANTAGENS:</strong> A construção de usinas hidrelétricas traz impactos ambientais e sociais 
-                    de grande magnitude, além de ser um processo custoso.
-                </p>
+            
+            <div class="accordion">
+                <div class="accordion-header" id="head-solar"><img src="../assets/icons/solar.png" alt="solar" class="icon"> Solar</div>
+                <div class="accordion-content" id="accord-solar">
+                    <div class="div-imagem large-only"></div>
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="p-solar">O termo energia solar pode se referir a qualquer uma das formas de energia 
+                            provenientes da luz ou calor do sol.
+                            Para se transformar em energia a radiação solar passa por um inversor solar para ser adaptada ao padrão 
+                            elétrico da rede e, depois, já pode ser utilizada para atender a casas, empresas e quaisquer outros estabelecimentos.
+                            <br><br>
+                            <strong>VANTAGENS:</strong> não polui, é renovável, limpa e silenciosa, pode ser usada em áreas isoladas 
+                            da rede elétrica, necessidade mínima de manutenção, muito fácil de instalar e é barato para manter. 
+                            <br>
+                            <strong>DESVANTAGENS:</strong> são o alto custo de aquisição (custo que se retorna em pouco tempo) e não 
+                            gerar energia à noite.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="div-imagem" id="img-hidre"></div>
-    </section>
-
-    <section class="sections" id="section-bio">
-        <div class="divs" id="div-bio">
-            <h2 class="titulo" id="h2-bio">Biomassa</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="bio-p">A queima da biomassa aquece uma caldeira com água, transformando a água em 
-                    vapor. Sob alta pressão, o vapor movimenta uma turbina que, por sua vez, aciona um gerador, produzindo 
-                    energia elétrica que pode ser injetada na rede elétrica.
-                    <br><br>
-                    <strong>VANTAGENS:</strong> É uma fonte renovável de energia e de baixo custo, sendo uma alternativa 
-                    viável a fontes poluentes, como os combustíveis fósseis.
-                    <br>
-                    <strong>DESVANTAGENS:</strong> Sua obtenção intensifica o desmatamento e a substituição de áreas de 
-                    vegetação nativa por monocultura, além de ser uma fonte de baixa eficiência energética.
-                </p>
+            
+            <div class="accordion">
+                <div class="accordion-header" id="head-hidre"><img src="../assets/icons/hidre.png" alt="hidro" class="icon"> Hidrelétrica</div>
+                <div class="accordion-content" id="accord-hidre">
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="p-hidre">Nessa fonte a água de um rio ou represa passa por uma usina onde ativa 
+                            as turbinas, gerando energia mecânica, e sai dela, terminando em um canal de descarga, através do qual 
+                            é devolvida ao fluxo. Diretamente conectado à turbina, está o gerador elétrico rotativo (alternador), 
+                            que transforma em energia elétrica a energia mecânica recebida pela turbina.
+                            <br><br>
+                            <strong>VANTAGENS:</strong> Trata-se de uma energia limpa, barata e gerada de uma fonte renovável. 
+                            <br>
+                            <strong>DESVANTAGENS:</strong> A construção de usinas hidrelétricas traz impactos ambientais e sociais 
+                            de grande magnitude, além de ser um processo custoso.
+                        </p>
+                    </div>
+                    <div class="div-imagem large-only"></div>
+                </div>
             </div>
-        </div>
-        <div class="div-imagem" id="img-bio"></div>
-    </section>
-
-    <section class="sections-2" id="section-geo">
-        <div class="divs" id="div-geo">
-            <h2 class="titulo" id="h2-geo">Geotérmica</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="p-geo">A energia geotérmica consiste em um tipo de energia renovável que é obtida
-                    a partir do aproveitamento do calor proveniente do interior da Terra.
-                    Mas, como é obtida a energia geotérmica? Para entender isso, é importante lembrarmos que o planeta Terra 
-                    é constituído de diversas camadas. Na camada superior, encontra-se a crosta terrestre, de estrutura fina 
-                    e composta por rochas. Logo abaixo está o manto terrestre, camada profunda e que é formada por magma, 
-                    um material composto por uma mistura de rochas em estado líquido e pastoso, em razão das elevadas 
-                    temperaturas do interior do planeta.
-                    É comum que todo esse calor se manifeste em determinadas áreas da superfície terrestre, em razão de 
-                    fendas geológicas e erupções vulcânicas. Tudo isso provoca o surgimento de gêiseres de vapor e 
-                    nascentes de água quente. Nesse momento, é possível a obtenção da energia geotérmica.
-                    <br><br>   
-                    <strong>VANTAGENS:</strong> Menor gasto para produção, já que não precisa de compra de matéria-prima, 
-                    é praticamente inesgotável, Menor emissão de gases poluentes e Pode atender às comunidades afastadas.
-                    <br>
-                    <strong>DESVANTAGENS:</strong> Emissão de ácido sulfídrico (H2S), nocivo à saúde, Poluição sonora causada 
-                    pela usina geotérmica e Pode contaminar rios e lagos próximos.
-                </p>
+            
+            <div class="accordion">
+                <div class="accordion-header" id="head-bio"><img src="../assets/icons/biomass.png" alt="bio" class="icon"> Biomassa</div>
+                <div class="accordion-content" id="accord-bio">
+                    <div class="div-imagem large-only"></div>
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="bio-p">A queima da biomassa aquece uma caldeira com água, transformando a água em 
+                            vapor. Sob alta pressão, o vapor movimenta uma turbina que, por sua vez, aciona um gerador, produzindo 
+                            energia elétrica que pode ser injetada na rede elétrica.
+                            <br><br>
+                            <strong>VANTAGENS:</strong> É uma fonte renovável de energia e de baixo custo, sendo uma alternativa 
+                            viável a fontes poluentes, como os combustíveis fósseis.
+                            <br>
+                            <strong>DESVANTAGENS:</strong> Sua obtenção intensifica o desmatamento e a substituição de áreas de 
+                            vegetação nativa por monocultura, além de ser uma fonte de baixa eficiência energética.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="div-imagem" id="img-geo"></div>
-    </section>
-
-    <section class="sections-2" id="section-mare">
-        <div class="divs" id="div-mare">
-            <h2 class="titulo" id="h2-mare">Maremotriz e Ondomotriz</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="p-mare">Energia ondomotriz
-                    Uma das mais promissoras fontes de energia renovável, a energia ondomotriz é capaz de transformar o 
-                    movimento das ondas, resultadas pela ação do vento na superfície do mar, em energia elétrica.
-                    Energia maremotriz
-                    A energia maremotriz é capaz de gerar energia elétrica por meio da diferença de altura entre marés de 
-                    alto e baixo porte, desde que a diferença seja de 7 metros entre as duas. O aproveitamento dessa energia 
-                    é feito por meio de centrais elétricas.
-                    <br><br>
-                    <strong>VANTAGENS:</strong> Trata-se de uma energia limpa, que não produz resíduos poluentes ao meio 
-                    ambiente e utiliza uma fonte renovável, que é a água. 
-                    <br>
-                    <strong>DESVANTAGENS:</strong> Apesar disso, os custos dos equipamentos ainda são muito altos, e existem 
-                    impactos para os ecossistemas marinhos nas áreas onde são instaladas as usinas maremotrizes. E os locais 
-                    propícios para a geração desse tipo de energia são muito específicos.
-                </p>
+            
+            <div class="accordion">
+                <div class="accordion-header" id="head-geo"><img src="../assets/icons/geotermic.png" alt="geo" class="icon"> Geotérmica</div>
+                <div class="accordion-content" id="accord-geo">
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="p-geo">A energia geotérmica consiste em um tipo de energia renovável que é obtida
+                            a partir do aproveitamento do calor proveniente do interior da Terra.
+                            Mas, como é obtida a energia geotérmica? Para entender isso, é importante lembrarmos que o planeta Terra 
+                            é constituído de diversas camadas. Na camada superior, encontra-se a crosta terrestre, de estrutura fina 
+                            e composta por rochas. Logo abaixo está o manto terrestre, camada profunda e que é formada por magma, 
+                            um material composto por uma mistura de rochas em estado líquido e pastoso, em razão das elevadas 
+                            temperaturas do interior do planeta.
+                            É comum que todo esse calor se manifeste em determinadas áreas da superfície terrestre, em razão de 
+                            fendas geológicas e erupções vulcânicas. Tudo isso provoca o surgimento de gêiseres de vapor e 
+                            nascentes de água quente. Nesse momento, é possível a obtenção da energia geotérmica.
+                            <br><br>   
+                            <strong>VANTAGENS:</strong> Menor gasto para produção, já que não precisa de compra de matéria-prima, 
+                            é praticamente inesgotável, Menor emissão de gases poluentes e Pode atender às comunidades afastadas.
+                            <br>
+                            <strong>DESVANTAGENS:</strong> Emissão de ácido sulfídrico (H2S), nocivo à saúde, Poluição sonora causada 
+                            pela usina geotérmica e Pode contaminar rios e lagos próximos.
+                        </p>
+                    </div>
+                    <div class="div-imagem large-only"></div>
+                </div>
             </div>
-        </div>
-        <div class="div-imagem" id="img-mare"></div>
-    </section>
-
-    <section class="sections-2" id="section-hydro">
-        <div class="divs" id="div-hydro">
-            <h2 class="titulo" id="h2-hydro">Hidrogênio</h2>
-            <div class="div-blur">
-                <div class="blur"></div>
-                <p class="paragrafo" id="p-hydro">O hidrogénio é o elemento mais leve e o que possui o maior valor energético. 
-                    Não é tóxico. Não acarreta emissões nocivas para o ambiente. E é até considerado o combustível do futuro.
-                    Entretanto, o hidrogênio precisa ser produzido e é por esse processo que pode determinar se o elemento 
-                    químico será uma alternativa sustentável ou não.
-                    Como o hidrogênio não existe na Terra como um gás, ele deve ser separado de outros compostos. Dois dos 
-                    métodos mais comuns usados ​​para a produção de hidrogênio são eletrólise ou divisão de água e reforma a vapor.
-                    <br><br>
-                    <strong>VANTAGENS:</strong> Um grande volume de hidrogênio pode ser facilmente armazenado de várias 
-                    maneiras diferentes. O hidrogênio também é considerado como um combustível de alta eficiência e baixo 
-                    poluente que pode ser usado para transporte, aquecimento e geração de energia em locais onde é difícil 
-                    usar eletricidade.
-                    <br>
-                    <strong>DESVANTAGENS:</strong> É uma alternativa cara para produção de energia por conta principalmente 
-                    de ser necessário produzir o hidrogênio que será usado como combustível.
-                </p>
+            
+            <div class="accordion">
+                <div class="accordion-header" id="head-mare"><img src="../assets/icons/tidal.png" alt="tidal" class="icon"> Maremotriz e Ondomotriz</div>
+                <div class="accordion-content" id="accord-mare">
+                    <div class="div-imagem large-only"></div>
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="p-mare">Energia ondomotriz
+                            Uma das mais promissoras fontes de energia renovável, a energia ondomotriz é capaz de transformar o 
+                            movimento das ondas, resultadas pela ação do vento na superfície do mar, em energia elétrica.
+                            Energia maremotriz
+                            A energia maremotriz é capaz de gerar energia elétrica por meio da diferença de altura entre marés de 
+                            alto e baixo porte, desde que a diferença seja de 7 metros entre as duas. O aproveitamento dessa energia 
+                            é feito por meio de centrais elétricas.
+                            <br><br>
+                            <strong>VANTAGENS:</strong> Trata-se de uma energia limpa, que não produz resíduos poluentes ao meio 
+                            ambiente e utiliza uma fonte renovável, que é a água. 
+                            <br>
+                            <strong>DESVANTAGENS:</strong> Apesar disso, os custos dos equipamentos ainda são muito altos, e existem 
+                            impactos para os ecossistemas marinhos nas áreas onde são instaladas as usinas maremotrizes. E os locais 
+                            propícios para a geração desse tipo de energia são muito específicos.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="div-imagem" id="img-hydro"></div>
-    </section>
+            
+            <div class="accordion">
+                <div class="accordion-header" id="head-hydro"><img src="../assets/icons/hydrogen.png" alt="hydrogen" class="icon"> Hidrogênio</div>
+                <div class="accordion-content" id="accord-hydro">
+                    <div class="div-blur">
+                        <div class="blur"></div>
+                        <p class="paragrafo" id="p-hydro">O hidrogénio é o elemento mais leve e o que possui o maior valor energético. 
+                            Não é tóxico. Não acarreta emissões nocivas para o ambiente. E é até considerado o combustível do futuro.
+                            Entretanto, o hidrogênio precisa ser produzido e é por esse processo que pode determinar se o elemento 
+                            químico será uma alternativa sustentável ou não.
+                            Como o hidrogênio não existe na Terra como um gás, ele deve ser separado de outros compostos. Dois dos 
+                            métodos mais comuns usados ​​para a produção de hidrogênio são eletrólise ou divisão de água e reforma a vapor.
+                            <br><br>
+                            <strong>VANTAGENS:</strong> Um grande volume de hidrogênio pode ser facilmente armazenado de várias 
+                            maneiras diferentes. O hidrogênio também é considerado como um combustível de alta eficiência e baixo 
+                            poluente que pode ser usado para transporte, aquecimento e geração de energia em locais onde é difícil 
+                            usar eletricidade.
+                            <br>
+                            <strong>DESVANTAGENS:</strong> É uma alternativa cara para produção de energia por conta principalmente 
+                            de ser necessário produzir o hidrogênio que será usado como combustível.
+                        </p>
+                    </div>
+                    <div class="div-imagem large-only"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./assets/js/accordion.js"></script>
 
-    <section id="section-dados">
-        <h2 class="titulo" id="titulo-dados">Matriz Energética no Brasil</h2>
-        <div id="div-dados">
-            <div id="grafico" ></div>
-            <p class="paragrafo" id="p-dados">
-                Como vimos no texto O que é energia?, precisamos de energia, por exemplo, para acender a luz, preparar nossas refeições e nos transportar de carro até a escola, a praia... Essa energia vem de um conjunto de fontes que formam o que chamamos de matriz energética. Ou seja, ela representa o conjunto de fontes utilizadas em um país, ou no mundo, para suprir a necessidade (demanda) de energia. 
-
-                O mundo possui uma matriz energética composta, principalmente, por fontes não renováveis, como o carvão, petróleo e gás natural.
-                
-                A matriz energética do Brasil é muito diferente da mundial. Por aqui, usamos mais fontes renováveis que no resto do mundo. Somando lenha e carvão vegetal, hidráulica, derivados de cana e outras renováveis, nossas renováveis totalizam 44,8%, quase metade da nossa matriz energética
-            </p>
-             
-        </div>
-
-    </section>
-
-    <section id="section-curio">
-        <h2 id="h2-curio">Matriz Energética</h2>
-        <ul id="ul-curio">
-            <li class="li-curio">
-                <h3 class="h3-curio">Brasil</h3>
-                <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
-                    quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
-                    voluptas suscipit eligendi illo optio.
-                    Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
-                    suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
-                    dolorem blanditiis reprehenderit. Soluta, velit.
+        <section id="section-curio">
+            <h2 id="h2-curio">Matriz Energética</h2>
+            <ul id="ul-curio">
+                <li class="li-curio">
+                    <h3 class="h3-curio">Brasil</h3>
+                    <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
+                        quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
+                        voluptas suscipit eligendi illo optio.
+                        Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
+                        suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
+                        dolorem blanditiis reprehenderit.
+                        </p>
+                    <div class="card-curio"><img class="img-card-curio" src="./assets/images/Brasil.jpg" alt="Imagem do cristo 
+                        redentor"></div>
+                </li>
+                <li class="li-curio">
+                    <h3 class="h3-curio">Mundo</h3>
+                    <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
+                        quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
+                        voluptas suscipit eligendi illo optio.
+                        Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
+                        suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
+                        dolorem blanditiis reprehenderit.
                     </p>
-                <div class="card-curio"><img class="img-card-curio" src="./assets/images/Brasil.jpg" alt="Imagem do cristo redentor"></div>
-            </li>
-            <li class="li-curio">
-                <h3 class="h3-curio">Mundo</h3>
-                <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
-                    quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
-                    voluptas suscipit eligendi illo optio.
-                    Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
-                    suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
-                    dolorem blanditiis reprehenderit. Soluta, velit.
-                </p>
-                <div class="card-curio"><img class="img-card-curio" src="./assets/images/Mundo.jpg" alt="Imagem de bandeiras"></div>
-            </li>
-        </ul>
-    </section>
+                    <div class="card-curio"><img class="img-card-curio" src="./assets/images/Mundo.jpg" alt="Imagem de bandeiras"></div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="section-form">
+            <h2 class="titulo">Você economiza?</h2>
+            <form>
+                        <label for="luz-natural">Você aproveita a luz natural no dia-a-dia:</label>
+                        <div id="resp">
+                            <input type="radio" id="layout-sim-luz" name="layout">
+                            <label for="layout-sim-luz">Sim</label>
+            
+                            <input type="radio" id="layout-mn-luz" name="layout">
+                            <label for="layout-mn-luz">As vezes</label>
+
+                            <input type="radio" id="layout-nao-luz" name="layout">
+                            <label for="layout-nao-luz">Não</label>
+                        </div>
+
+                        
+                        <label for="">Inviste em lâmpadas de LED:</label>
+                        <div>
+                            <input type="radio" id="layout-sim-led" name="layout1">
+                            <label for="layout-sim">Sim, invisto</label>
+            
+                            <input type="radio" id="layout-nao-led" name="layout1">
+                            <label for="layout-nao">Não, não invisto</label>
+                        </div>
+
+                        <label for="check">Inviste em eletrodomésticos com Selo Procel A:</label><input id="check" type="checkbox">
+
+                        <label for="">Retira os eletrodomésticos e eletrônicos da tomada depois do uso?</label>
+                        <div>
+                            <input type="radio" id="layout-sim-tomada" name="layout2">
+                            <label for="layout-tomada-sim">Sim</label>
+            
+                            <input type="radio" id="layout-nao-tomada" name="layout2">
+                            <label for="layout-tomada-nao">Não</label>
+                        </div>
+
+                        <label for="banho">Demora quanto tempo no banho?</label><input type="number" id="banho" min="1" placeholder="Tempo em minutos">
+                        
+                        <output id="mensagem"></output>
+                        <output></output>
+            </form>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
 
 </body>
 </html>

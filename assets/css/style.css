@@ -21,6 +21,94 @@ html {
     overflow-x: hidden;
 }
 
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spin{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 16px solid #999;
+    border-top: 16px solid #6A3093;
+    animation: spin 2s linear infinite;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#hamburger .linha{
+    width: 100%;
+    height: .5rem;
+    background-color: var(--white);
+    box-shadow: 0 0.2rem .2rem #000;
+}
+
+nav ul{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: -35rem;
+    top: .5rem;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 2rem;
+    background-color: var(--white);
+    width: 30rem;
+    height: auto;
+    z-index: 9;
+    transition: right 1s;
+}
+
+#menu li{
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    
+    color: var(--text-secundary);
+}
+
+#menu a:hover{
+    color: #959595;
+}
+
+.menu-show{
+    top: .5rem;
+    right: 0;
+}
+
 .sections {
     height: 80vh;
     display: flex;
@@ -48,16 +136,8 @@ html {
     width: 70%;
 }
 
-.div-imagem {
-    border-radius: 4.4rem;
-    border: 3px solid #000;
-    background-size: cover;
-    width: 25%;
-    height: 40vh;
-}
-
 .titulo {
-    font-size: 12.8rem;
+    font-size: clamp(9rem, 10vw, 12.8rem);
     font-weight: 700;
     font-family: var(--font-heading);
     line-height: var(--l-height-h);
@@ -68,60 +148,31 @@ html {
 
 .div-blur {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 0;
 }
 
 .blur {
     position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
+    width: 80%;
+    height: 80%;
     background-color: var(--white);
     filter: blur(16rem);
     z-index: -1;
+    
 }
 
 .paragrafo {
-    font-size: 2.4rem;
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
     font-weight: 400;
     color: var(--black);
     font-family: var(--font-default);
     line-height: var(--l-height-p);
     border-left: 1px solid #000;
     padding-left: 2%;
-}
-
-.button{
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    font-family: var(--font-heading);
-    font-size: 3.2rem;
-    line-height: var(--l-height-p);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4rem;
-    gap: 7rem;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-    transition: transform 0.3 ease-in-out;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    transform: translateX(-24rem);
-    box-shadow: 0 0 10px #2980B9;
-    padding-left: 2rem;
-    gap: 2rem;
-    padding-right: 2rem;
-}
-
-.div-botoes {
-    position: absolute;
-    z-index: 1;
-    left: 93%;
-    right: -40%;
+    flex-grow: 1;
 }
 
 .icon {
@@ -134,6 +185,7 @@ header {
     background: url(../images/Hero.jpg);
     position: relative;
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     /*overflow: hidden;
     -webkit-background-size: cover;
@@ -160,7 +212,7 @@ header {
 }
 
 #header-h1 {
-    font-size: 11rem;
+    font-size: clamp(6rem, 10vw, 11rem);
     font-weight: 900;
     font-family: Poppins;
     color: var(--white);
@@ -179,7 +231,7 @@ header {
 }
 
 #header-span {
-    font-size: 4.8rem;
+    font-size: clamp(3rem, 10vw, 4.8rem);
     font-weight: 700;
     font-family: var(--font-heading);
     color: var(--white);
@@ -207,18 +259,19 @@ header {
 
 #section-start {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     background-image: url("../images/Energ_Renov.jpg");
     background-size: cover;
-    height: 85vh;
-    background-position-x: -13rem;
-    background-position-y: -14.8rem;
-    padding: 2rem 0rem 5rem 44.5%;
+    height: auto;
+    width: 100vw;
+    /*background-position-x: -13rem;
+    background-position-y: -14.8rem;*/
+    padding: 2rem 1rem 5rem 44.5%;
 }
 
 #start-h2 {
-    font-size: 12.8rem;
+    font-size: clamp(6rem, 10vw, 12.8rem);
     font-weight: 700;
     color: var(--white);
     font-family: var(--font-heading);
@@ -226,16 +279,16 @@ header {
     text-shadow: 2px 2px 2px var(--black);
     /*-webkit-text-stroke: var(--stroke);*/
     line-height: var(--l-height-h);
-    padding-left: 4.4rem;
+    padding-left: 2.2rem;
 }
 
 #start-p {
-    font-size: 2.4rem;
+    font-size: clamp(2rem, 5vw, 2.4rem);
     font-weight: 400;
     color: var(--black);
     font-family: var(--font-default);
     line-height: var(--l-height-p);
-    padding-right: 15rem;
+    margin-right: 5rem;
 }
 
 #h-p-start {
@@ -244,138 +297,153 @@ header {
     gap: 2rem;
 }
 
-#b-eolic {
-    background: linear-gradient(90deg, #38C3FF, var(--white));
+#accord-tipos {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem 10rem;
 }
 
-#b-solar {
-    background: linear-gradient(90deg, #FFC93F, var(--white));
+#accord-h {
+    font-size: clamp(6rem, 8vw, 12.8rem);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
 }
 
-#b-hidro {
-    background: linear-gradient(90deg, #66BFFF, var(--white));
+.accordion {
+    border: 1px solid #ccc;
+}
+  
+.accordion-header {
+    font-size: clamp(3rem, 6vw, 6.4rem);
+    font-weight: 700;
+    font-family: var(--font-heading);
+    line-height: auto;
+    text-shadow: 2px 2px 2px var(--black);
+    cursor: pointer;
+    padding: 0 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+  
+.accordion-content {
+    display: none;
+    padding: 2rem;
 }
 
-#b-bio {
-    background: linear-gradient(90deg, #98D90E, var(--white));
+.accordion-show {
+    display: flex;
+    height: auto;
 }
 
-#b-geo {
-    background: linear-gradient(90deg, #F06110, var(--white));
+.div-imagem {
+    border-radius: 4.4rem;
+    border: 3px solid #000;
+    background-size: cover;
+    margin: 0 2rem;
+    width: 80%;
+    height: auto;
 }
 
-#b-tidal {
-    background: linear-gradient(90deg, #0768d7, var(--white));
-}
-
-#b-hydrogen {
-    background: linear-gradient(90deg, #C6D7DC, var(--white));
-}
-
-
-#section-eolic {
+#accord-eolic {
     background-image: url("../images/Fundo_Eolic.jpg");
-    /*background-position-y: -16rem;
-    background-repeat: no-repeat;*/
 }
 
-#img-eolic {
+#accord-eolic .div-imagem {
     background-image: url("../images/Img_Eolic.jpg");
-    /*background-position-x: 40rem;
-    background-position-y: -8rem;*/
 }
 
-#h2-eolic {
-    color: #38C3FF;
+#head-eolic {
+    color: #9de1fe;
+    background: linear-gradient(180deg, #9de1fe90, var(--white));
 }
 
-
-#section-solar {
+#accord-solar {
     background-image: url("../images/Fundo_Solar.jpg");
-    /*background-position-y: -21rem;
-    background-repeat: no-repeat;*/
 }
 
-#img-solar {
+#accord-solar .div-imagem {
     background-image: url("../images/Img_Solar.jpg");
-    /*background-position-x: 40rem;
-    background-position-y: -60rem;*/
 }
 
-#h2-solar {
+#head-solar {
     color: #FFC93F;
+    background: linear-gradient(180deg, #FFC93F90, var(--white));
 }
 
-
-#section-hidre {
+#accord-hidre {
     background-image: url("../images/Fundo_Hidre.jpg");
-    /*background-position-y: -36rem;*/
 }
 
-#img-hidre {
+#accord-hidre .div-imagem {
     background-image: url("../images/Img_Hidre.jpg");
 }
 
-#h2-hidre {
+#head-hidre {
     color: #66BFFF;
+    background: linear-gradient(180deg, #66BFFF90, var(--white));
 }
 
-
-#section-bio {
-    background-image: url("../images/Fundo_Bio.jpg");
+#accord-bio {
+    background-image: url("../images/Fundo_Bioms.jpg");
 }
 
-#img-bio {
+#accord-bio .div-imagem {
     background-image: url("../images/Img_Bio.jpg");
 }
 
-#h2-bio {
+#head-bio {
     color: #98D90E;
+    background: linear-gradient(180deg, #98D90E90, var(--white));
 }
 
-
-#section-geo {
+#accord-geo {
     background-image: url("../images/Fundo_Geo.jpg");
-    /*background-position-y: -11rem;*/
 }
 
-#img-geo {
+#accord-geo .div-imagem {
     background-image: url("../images/Img_Geo.jpg");
 }
 
-#h2-geo {
+#head-geo {
     color: #F06110;
+    background: linear-gradient(180deg, #F0611090, var(--white));
 }
 
-
-#section-mare {
+#accord-mare {
     background-image: url("../images/Fundo_MareOnda.jpg");
 }
 
-#img-mare {
+#accord-mare .div-imagem {
     background-image: url("../images/Img_MareOnda.jpg");
 }
 
-#h2-mare {
+#head-mare {
     color: #0D4F9C;
+    background: linear-gradient(180deg, #0768d790, var(--white));
 }
 
-#section-hydro {
-    background-image: url("../images/Fundo_Hydro.jpg");
+#accord-hydro {
+    background-image: url("../images/Fundo_hydro.jpg");
 }
 
-#img-hydro {
+#accord-hydro .div-imagem {
     background-image: url("../images/Img_Hydro.jpg");
 }
 
-#h2-hydro {
+#head-hydro {
     color: #C6D7DC;
+    background: linear-gradient(180deg, #C6D7DC90, var(--white));
 }
 
-
-
 #section-curio {
-    height: 100vh;
+    height: auto;
     background-color: #212121;
     background-image: url(../images/Céu.jpg);
     background-size: cover;
@@ -389,7 +457,7 @@ header {
 
 #h2-curio {
     display: flex;
-    font-size: 12.8rem;
+    font-size: clamp(6rem, 8vw, 12.8rem);
     font-weight: 700;
     font-family: var(--font-heading);
     line-height: var(--l-height-h);
@@ -407,10 +475,11 @@ header {
     list-style: none;
     position: relative;
     cursor: pointer;
-    width: 40%;
-    height: 50%;
+    width: 35%;
+    height: 35%;
     transition: 0.5s;
 }
+
 
 .img-card-curio {
     height: 100%;
@@ -419,7 +488,7 @@ header {
 }
 
 .h3-curio {
-    font-size: 10rem;
+    font-size: clamp(3rem, 6vw, 10rem);
     font-family: var(--font-heading);
     color: var(--white);
     text-shadow: 2px 2px 2px var(--black);
@@ -427,62 +496,125 @@ header {
 }
 
 .p-card-curio {
+    display: none;
     position: absolute;
-    font-size: 2.4rem;
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
     color: var(--white);
     background-color: #00000050;
+    border-radius: 3rem;
     opacity: 0;
-    margin-top: 12rem;
+    margin-top: 14rem;
     padding: 2rem;
     transition: opacity 0.5s;
 }
 
 #section-curio .li-curio:hover {
-    width: 50%;
-    height: 60%;
+    width: 55%;
+    height: auto;
 }
 #section-curio .li-curio:hover p {
+    display: flex;
     opacity: 1;
 }
 
-
-
-#section-dados {
+#section-form{
+    height: auto;
+    background-image: url("../images/Fundo_Porquinho.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    height: 100vh;
-    background-image: url(../images/Fundo_Dados.jpg);
     background-size: cover;
-    flex-wrap: nowrap;
-    padding: 2rem 5rem;
+    padding: 3rem;
 }
 
-#div-dados{
+#section-form .titulo {
+    margin: 5rem;
+}
+
+#section-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: #00000050;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 4rem;
+    width: 80%;
+    height: auto;
+}
+
+#section-form label{
+    font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+    font-weight: 600;
+    color: var(--black);
+    font-family: var(--font-default);
+    line-height: var(--l-height-p);
+    grid-column: 1;
+}
+
+#section-form input{
+    height: 3rem;
+    border-radius: 10px;
+    grid-column: 2;
+}
+
+#section-form form div{
     display: flex;
-    flex-direction: row; 
-    gap: 4%;
-    height: 40vh;
+    gap: 2rem;
 }
 
-#grafico {
-    background-image: url("../images/Grafico.png");
-    background-repeat: no-repeat;
-    width: 48rem;
-    height: 34vh;
-}
-
-#titulo-dados{
-    background: linear-gradient(90deg, #00C3FF, #FFFF1C);
-    background-clip: padding-box;
-    -webkit-background-clip: text;
-    color: transparent;
+#section-form output{
     font-family: var(--font-heading);
-    font-size: 9.6rem;
-    z-index: 1;
+    font-size: clamp(2.4rem, 3vw, 3.2rem);
+    font-weight: 900;
+    grid-column: 2;
+    text-shadow: 2px 2px 2px var(--white);
 }
 
-#p-dados{
-    width: 60%;
+@media (max-width: 1160px) {
+    .large-only {
+        display: none;
+    }
+    #header-h1 {
+        margin: 0 2rem;
+    }
+    #ul-curio{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+    #section-form .titulo{
+        margin: 0.5rem;
+        font-size: clamp(5rem, 8vw, 12.8rem);
+    }
+    #section-start {
+        justify-content: center;
+        padding: 5rem;
+    }
+    #start-p {
+        background-color: #ffffff90;
+        padding: 1rem;
+    }
+    #accord-tipos {
+        padding: 2rem 3rem;
+    }
+    .blur {
+        width: 100%;
+        height: 100%;
+        filter: blur(6rem);
+    }
+    .p-card-curio {
+        margin-top: 7rem;
+    }
+    .li-curio {
+        width: 100%;
+        height: auto;
+    }
+    .p-card-curio {
+        display: flex;
+        opacity: 1;
+    }
 }
+
