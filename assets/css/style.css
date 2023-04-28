@@ -580,6 +580,9 @@ header {
         justify-content: center;
         gap: 5rem;
     }
+    #section-curio {
+        padding: 3rem 4rem;
+    }
     .h3-curio {
         height: 10vh;
     }
