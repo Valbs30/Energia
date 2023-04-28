@@ -28,31 +28,31 @@
 
             <ul id="menu">
                 <li>
-                    <a href="#">
+                    <a href="#header">
                         <i class="fa-solid fa-house"></i>
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#section-start">
                         <i class="fa-solid fa-lightbulb"></i>
                         Significado
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <i class="fa-solid fa-wind"></i>
+                    <a href="#accord-tipos">
+                        <i class="fa-solid fa-bolt"></i>
                         Fontes Renováveis
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#section-curio">
                         <i class="fa-solid fa-chart-simple"></i>
                         Dados
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#section-form">
                         <i class="fa-solid fa-money-bill"></i>
                         Economia de Energia
                     </a>
@@ -60,7 +60,7 @@
             </ul>
         </nav>
 
-        <header>
+        <header id="header">
             <div id="texto-header">
                 <h1 id="header-h1">FONTES DE ENERGIA <br> RENOVÁVEIS</h1> 
                 <span id="header-span">Armando Caliari Silva
@@ -251,31 +251,28 @@
 
         <section id="section-curio">
             <h2 id="h2-curio">Matriz Energética</h2>
-            <ul id="ul-curio">
-                <li class="li-curio">
-                    <h3 class="h3-curio">Brasil</h3>
-                    <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
-                        quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
-                        voluptas suscipit eligendi illo optio.
-                        Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
-                        suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
-                        dolorem blanditiis reprehenderit.
+                <div id="div-cards">
+                    <div class="card" id="card-brasil">
+                        <h3 class="h3-curio">Brasil</h3>
+                        <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
+                            quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
+                            voluptas suscipit eligendi illo optio.
+                            Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
+                            suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
+                            dolorem blanditiis reprehenderit.
                         </p>
-                    <div class="card-curio"><img class="img-card-curio" src="./assets/images/Brasil.jpg" alt="Imagem do cristo 
-                        redentor"></div>
-                </li>
-                <li class="li-curio">
-                    <h3 class="h3-curio">Mundo</h3>
-                    <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
-                        quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
-                        voluptas suscipit eligendi illo optio.
-                        Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
-                        suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
-                        dolorem blanditiis reprehenderit.
-                    </p>
-                    <div class="card-curio"><img class="img-card-curio" src="./assets/images/Mundo.jpg" alt="Imagem de bandeiras"></div>
-                </li>
-            </ul>
+                    </div>
+                    <div class="card" id="card-mundo">
+                        <h3 class="h3-curio">Mundo</h3>
+                        <p class="p-card-curio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed eum velit culpa, 
+                            quo laudantium eius molestias maxime, omnis enim assumenda consequatur unde fugit reprehenderit 
+                            voluptas suscipit eligendi illo optio.
+                            Fugit eaque nostrum minima id excepturi. Repellendus aperiam, necessitatibus, voluptatum eaque eos 
+                            suscipit expedita ad dignissimos labore cumque, temporibus similique hic totam ab tenetur debitis 
+                            dolorem blanditiis reprehenderit.
+                        </p>
+                    </div>
+                </div>
         </section>
 
         <section id="section-form">
@@ -303,7 +300,7 @@
                             <label for="layout-nao">Não, não invisto</label>
                         </div>
 
-                        <label for="check">Inviste em eletrodomésticos com Selo Procel A:</label><input id="check" type="checkbox">
+                        <label for="check">Inviste em eletrodomésticos com Selo Procel A:</label><div><input id="check" type="checkbox"></div>
 
                         <label for="">Retira os eletrodomésticos e eletrônicos da tomada depois do uso?</label>
                         <div>
@@ -317,7 +314,7 @@
                         <label for="banho">Demora quanto tempo no banho?</label><input type="number" id="banho" min="1" placeholder="Tempo em minutos">
                         
                         <output id="mensagem"></output>
-                        <output></output>
+                        
             </form>
         </section>
     </main>
