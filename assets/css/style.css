@@ -160,7 +160,6 @@ nav ul{
     background-color: var(--white);
     filter: blur(16rem);
     z-index: -1;
-    
 }
 
 .paragrafo {
